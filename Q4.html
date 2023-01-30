@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<!-- assignment 1 - question 4 -->
+
+<html>
+
+	<head>
+	
+		<style>
+			
+			#personal {
+				color: orange;
+				border-color: orange; <!-- try yellow with more contrasting background colour -->
+				float: left;
+				width: 100%;
+				background-color: #ffcc80;
+			}
+			
+			#personal label {
+				color: black;
+				font-weight: bold;
+			}
+			
+			
+			
+			#survey {
+				color: red;
+				border-color: red;
+				float: left;
+				width: 100%;
+				background-color: #ff8080;
+				
+				
+			}
+			
+			#survey label {
+				color: black;
+				font-weight: bold;
+			}
+			
+			<!-- The labels in each fieldset should be a lighter version of the border and legend color." ??? thats not what it shows in the example -->
+			
+			
+			#options label {
+				font-weight: normal;
+			
+			}
+		
+		
+		
+		
+		</style>
+	
+	</head>
+	
+	
+	
+	
+	
+	
+	
+	<body>
+	
+	<table>
+		<tr>
+			<td><h1>Pizza Lover's Survey</h1></td>
+			<td><a href="https://www.amazon.ca/Hungry-Pizza-Cartoon-Vinyl-Sticker/dp/B077M81CR8">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdzojsliCmHhPwsI6ioPtOhHVO7_tGL8bMKw&usqp=CAU"
+						alt="Picture of a man eating a pizza"
+						width="107" height="125"
+						align="CENTER"/>
+				</a>
+			</td> <!-- for href, should it link to the site from which pic comes from or to the image address? -->
+		</tr>
+	</table>
+	
+	
+	<form> <!-- decide on action and method attributes -->
+	
+	<fieldset id="personal">
+		<legend>Pizza Lover's Personal Information</legend>
+		
+		
+		<label for="firstName">First Name</label>
+		<input type="text" id="firstName" name="firstName">
+		<br><br>
+		<label for="familyName">Family Name</label>
+		<input type="text" id="familyName" name="familyName">
+		<br><br>
+		<label for="gender">Gender:</label>
+		<label><input type="radio" name="gender" value="female"/>Female</label>
+		<label><input type="radio" name="gender" value="male"/>Male</label>
+			
+		<br><br>
+		<label for="ageCategory">What age category are you from?</label>
+		<select name="ageCategory"> <!-- add more options? instead of more than 18 put 18-30, 30-50, 50+ for example -->
+			<option>Less than 18</option>
+			<option>More than 18</option>
+		</select>
+			
+		<br><br>
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email">
+			
+		
+		
+		
+		
+	</fieldset>
+	
+	<fieldset id="survey">
+		<legend>Survey Questions</legend>
+		
+		
+		
+		<label for="pizzaTypes">Which type of pizza do you like? (Pick as many as apply)</label><br>
+		
+		<label><input type="checkbox" name="pizzaTypes" value="cheese"/>Cheese<label>
+		<label><input type="checkbox" name="pizzaTypes" value="meatLovers"/>Meat Lovers<label>
+		<label><input type="checkbox" name="pizzaTypes" value="allDressed"/>All Dressed<label>
+		<br>
+		<label><input type="checkbox" name="pizzaTypes" value="sausage"/>Hawaiian<label>
+		<label><input type="checkbox" name="pizzaTypes" value="onion"/>Vegetarian<label>
+		<label><input type="checkbox" name="pizzaTypes" value="olives"/>Mexican<label>
+		<br>
+		<label><input type="checkbox" name="pizzaTypes" value="other"/>Other<label>
+		<br><br>
+		
+		
+		<label for="favouritePizzaToppings">List your 3 favourite pizza toppings:</label>
+		<br>
+		<input type="text" name="favouritePizzaToppings">
+		<input type="text" name="favouritePizzaToppings">
+		<input type="text" name="favouritePizzaToppings">
+			
+		<br><br>
+		
+		<label for="restaurantChoice">If you were to win a free pizza of your choice, which pizza place would you want it from?<label><br>
+		<div id="options">
+		<label><input type="radio" name="restaurantChoice" value="dominos"/>Domino's Pizza</label>
+		<label><input type="radio" name="restaurantChoice" value="pizzaHut"/>Pizza Hut</label>
+		<label><input type="radio" name="restaurantChoice" value="sliceAndSoda"/>Slice + Soda</label>
+		<label><input type="radio" name="restaurantChoice" value="pizzaBella"/>Pizza Bella</label>
+		<div>
+			
+			
+		
+		
+		
+		
+		
+	</fieldset>
+	
+	
+	<br>
+	<p>Thank you for taking the time to fill out our survey!</p>
+	<input type="submit" value="Submit"> <!-- should submit and reset buttons be in <form>? if so, which one? and how? -->
+	<input type="reset"> <!-- or if they're ok here, how to i link them to the forms? -->
+	<!-- put fieldtext INSIDE OF ONE LARGE FORM -->
+	
+	
+	</form>
+	
+	
+	
+	</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
