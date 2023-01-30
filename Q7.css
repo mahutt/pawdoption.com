@@ -1,0 +1,18 @@
+div {
+    width: 200px;
+    height: 200px;
+    border: 2px dotted green;
+    padding: 5px;
+    text-align: center;
+}
+
+span.red {
+    color: red;
+    font-weight: bold;
+
+}
+
+#second {
+    position: relative;
+    bottom: 60px;
+}
