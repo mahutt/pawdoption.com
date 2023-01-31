@@ -9,3 +9,17 @@ body {
     background-color: #CBF3F0;
     font-size: 30px;
 }
+
+
+.header img {
+    padding-right: 20px;
+    width: 80px;
+    height: 80px;
+}
+
+/*
+.header h1 {
+    
+}
+
+*/
