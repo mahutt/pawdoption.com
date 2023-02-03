@@ -1,3 +1,6 @@
+
+/* https://coolors.co/palette/cdb4db-ffc8dd-ffafcc-bde0fe-a2d2ff */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 
@@ -6,37 +9,56 @@ body {
 .header {
     padding: 10px;
     text-align: center;
-    background-color: #CBF3F0;
-    font-size: 30px;
+    background-color: #a2d2ff;
+    color: black;
 }
 
-
 .header img {
-    padding-right: 20px;
+    padding-top: 20px;
     width: 80px;
     height: 80px;
 }
 
-div.side-menu {
-    background-color: black;
-    width: 20%;
-}
-div.side-menu list {
-    list-style: none;
-    
-    
+.header h1 {
+    font-size: 50px;
 }
 
-div.side-menu list li {
-    margin: 10px;
-    width: 50%; 
-    height: 50px;
-    text-align: center;
-    background-color: black;
-    /*
-    padding-left: 30px;
-    background: rgb(183, 183, 183);
-    text-align: left;
+* {
+    box-sizing: border-box; /* justify this */
+}
+
+.side-menu {
+    float: left;
+    width: 20%;
+    background-color: #cdb4db;
+}
+
+.side-menu a {
+    display: block; /* justify this */
+    padding: 20px 30px;
+    border: 1px solid black;
     text-decoration: none;
-    */
-} 
+    color: black;
+}
+
+.side-menu a:hover {
+    background-color: #ffafcc;
+    font-weight: bold;
+}
+
+.main {
+    float: left;
+    width: 80%;
+    padding: 20px;
+    height: 400px; /* for now, should find better solution */
+    background-color: #ffc8dd;
+}
+
+.footer {
+    clear: both; /* dont fully understand why this worked in making the footer go on its own line
+                    section, but it did! */
+    padding: 20px;
+    background-color: #a2d2ff;
+    text-align: center;
+
+}

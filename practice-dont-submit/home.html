@@ -8,14 +8,130 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
+
+        .header {
+            padding: 80px;
+            text-align: center;
+            background: #a2d2ff;
+            color: white; /* sets header text color! */
+
+        }
+
+        .header h1 {
+            font-size: 40px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #bde0fe;
+        }
+
+        .navbar a {
+            float: left;
+            display: block; /* why? */
+            color: white;
+            text-align: center;
+            padding: 14px 20px; /* top/bot padding followed by left/right padding */
+            text-decoration: none;
+        }
+
+        .navbar a.right {
+            float: right;
+        }
+
+        .navbar a:hover {
+            background-color: #ffafcc; /* background colour changes */
+            color: black; /* text colour changes */
+        }
+
+        * {
+            box-sizing: border-box; /* sizes are set according to the (outside of the) border! not the content area! */
+        }
+
+        .row {
+            display: flex; /* not sure tbh */
+            flex-wrap: wrap; /* so that items don't try squeezing into the same row */
+            text-align: center;
+        }
+
+        .side {
+            flex: 30%; /* set the width of the sidebar */
+            background-color: #ffc8dd;
+            padding: 20px;
+        }
+
+        .main {
+            flex: 70%;
+            background-color: #cdb4db;
+            padding: 20px;
+        }
+
+        /* RESPONSIVE LAYOUT - WHEN SCREEN < 700PX WIDE, CONTENT COLUMNS WILL STACK ON TOP OF EACH OTHER */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* RESPONSIVE LAYOUT - NAV LINKS STACK WHEN SCREEN < 400PX WIDE */
+        @media screen and (max-width: 400px) {
+            .navbar {
+                float: none;
+                width: 100%;
+            }
+        }
+
+        .footer {
+            padding: 20px; 
+            text-align: center;
+            background: #a2d2ff;
+        }
+
+
     </style>
 
 </head>
 
 <body>
 
-    <h1>My Website</h1>
-    <p>A website created by me.</p>
+
+    <!-- START HEADER-->
+    <div class="header">
+        <h1>My Website</h1>
+        <p>A website created by me.</p>
+    </div>
+    <!-- END HEADER -->
+
+    <!-- START NAVIGATION BAR-->
+    <div class="navbar">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#" class="right">link</a>
+    </div>
+    <!-- END NAVIGATION BAR-->
+
+    <!-- START CONTENT -->
+    <div class="row">
+        <div class="side">
+            <h1>SIDE CONTENT</h1>
+            <p>Some text some text...</p>
+        </div>
+        <div class="main">
+            <h1>MAIN CONTENT</h1>
+            <p>Some text some text...</p>
+            <p>Some text some text...</p>
+            <p>Some text some text...</p>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+
+    <!-- START FOOTER-->
+    <div class="footer">
+        <h1>FOOTER</h1>
+    </div>
+    <!-- END FOOTER-->
+
 
 </body>
 
