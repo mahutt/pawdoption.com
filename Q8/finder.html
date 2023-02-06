@@ -49,17 +49,47 @@
                 <label for="animalType">Are you a cat person, or a dog person?</label>
                 <label><input type="radio" name="animalType" value="cat">Cat</label>
                 <label><input type="radio" name="animalType" value="dog">Dog</label>
+
+                <label for="animalGender">Preferred Gender</label>
+                <label><input type="radio" name="animalGender" value="female">Female</label>
+                <label><input type="radio" name="animalGender" value="male">Male</label>
+                <label><input type="radio" name="animalGender" value="dontCare">Doesn't Matter</label>
+
                 
-                <label for="animalBreed">Pick a breed?</label>
+                <label for="animalBreed">Preffered Breed</label>
                 <select name="animalBreed" id="animalBreed">
+                    <option value="dontCare">Doesn't Matter</option>
                     <option value="goldenRetriever">Golden Retriever</option>
                     <option value="labradorRetriever">Labrador Retriever</option>
                     <option value="frenchBulldog">French Bulldog</option>
                     <option value="beagle">Beagle</option>
                     <option value="poodle">Poodle</option>
-                    <!-- do cat values next -->
-
+                    <option value="britishShorthair">British Shorthair</option>
+                    <option value="persian">Persian</option>
+                    <option value="maineCoon">Maine Coon</option>
+                    <option value="americanShorthair">American Shorthair</option>
+                    <option value="scottishFold">Scottish Fold</option>
+                    <option value="sphynx">Sphynx</option>
+                    <option value="mixed">Mixed Breed</option>
                 </select>
+
+                <label for="animalAge">Preffered Age</label>
+                <select name="animalAge" id="animalAge">
+                    <option value="dontCare">Doesn't Matter</option>
+                    <option value="lessThan1">Less than 1 year</option>
+                    <option value="1to4">Between 1 and 4 years</option>
+                    <option value="4to8">Between 4 and 8 years</option>
+                    <option value="moreThan8">More than 8 years<option>
+                </select>
+
+                <label for="behaviour">Select any of the following:</label>
+                <label></label><input type="checkbox" name="behaviour" value="catCompatible">Must get along with cats</label>
+                <label></label><input type="checkbox" name="behaviour" value="dogCompatible">Must get along with dogs</label>
+                <label></label><input type="checkbox" name="behaviour" value="childCompatible">Must get along with small children</label>
+
+                <input type="submit">
+                <input type="reset">
+
 
             </form>
 
