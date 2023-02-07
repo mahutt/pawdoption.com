@@ -55,8 +55,12 @@ body {
 }
 
 .footer {
-    clear: both; /* dont fully understand why this worked in making the footer go on its own line
+    position: fixed;
+    /*clear: both;*/ /* dont fully understand why this worked in making the footer go on its own line
                     section, but it did! */
+    left: 0;
+    bottom: 0;
+    width: 100%;
     padding: 20px;
     background-color: #a2d2ff;
     text-align: center;

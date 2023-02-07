@@ -82,9 +82,38 @@
         }
 
         .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
             padding: 20px; 
             text-align: center;
             background: #a2d2ff;
+        }
+
+        .menu {
+            border-radius: 25px;
+            width: 200px;
+            position: fixed;
+            top: 550px;
+            left: 30px;
+            background-color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+        }
+
+        .menu a {
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+        }
+
+        .menu a:hover {
+            
+            color: pink;
         }
 
 
@@ -102,14 +131,23 @@
     </div>
     <!-- END HEADER -->
 
-    <!-- START NAVIGATION BAR-->
+    <!-- START SIDE NAV -->
+    <div class="menu">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <!-- END SIDE NAV -->
+
+    <!-- START NAVIGATION BAR
     <div class="navbar">
         <a href="#">link</a>
         <a href="#">link</a>
         <a href="#">link</a>
         <a href="#" class="right">link</a>
     </div>
-    <!-- END NAVIGATION BAR-->
+     END NAVIGATION BAR-->
 
     <!-- START CONTENT -->
     <div class="row">
