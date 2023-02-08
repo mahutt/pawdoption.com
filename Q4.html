@@ -1,178 +1,120 @@
 <!DOCTYPE html>
 
-<!-- assignment 1 - question 4 -->
-
 <html>
 
-	<head>
+<head>
+	<style>
+		body {
+			background-color: rgb(161, 253, 100);
+		}
+		.personal {
+			border-color: orange;
+			background-color: lightblue;
+			color: orange;
+		}
+		.personal label {
+			color: lightgoldenrodyellow;	
+		}
+		.survey {
+			border-color: red;
+			background-color: lightblue;
+			color: red;	
+		}
+		.survey label {
+			color: rgb(255, 136, 136);
+		}
+		.prompt {
+			font-weight: bold;
+		}
+	</style>
+</head>
 	
-		<style>
+<body>
+	<div class="Q4">	
+		<table>
+			<tr>
+				<td><h1>Pizza Lover's Survey</h1></td>
+				<td><a href="https://www.amazon.ca/Hungry-Pizza-Cartoon-Vinyl-Sticker/dp/B077M81CR8">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdzojsliCmHhPwsI6ioPtOhHVO7_tGL8bMKw&usqp=CAU"
+							alt="Picture of a man eating a pizza"
+							width="107" height="125"/>
+					</a>
+				</td>
+			</tr>
+		</table>
+		
+		<form>
+		<fieldset class="personal">
+			<legend>Pizza Lover's Personal Information</legend>
 			
-			#personal {
-				color: orange;
-				border-color: orange; /* try yellow with more contrasting background colour */
-				float: left;
-				width: 100%;
-				background-color: #ffcc80;
-			}
-			
-			#personal label {
-				color: black;
-				font-weight: bold;
-			}
-			
-			
-			
-			#survey {
-				color: red;
-				border-color: red;
-				float: left;
-				width: 100%;
-				background-color: #ff8080;
+			<label for="firstName" class="prompt">First Name</label>
+			<input type="text" id="firstName" name="firstName">
+			<br><br>
+	
+			<label for="familyName" class="prompt">Family Name</label>
+			<input type="text" id="familyName" name="familyName">
+			<br><br>
+	
+			<label for="gender" class="prompt">Gender:</label>
+			<label><input type="radio" id="female" name="gender" value="Female"/>Female</label>
+			<label><input type="radio" id="male" name="gender" value="Male"/>Male</label>
+		
+			<br><br>
+			<label for="ageCategory" class="prompt">What age category are you from?</label>
+			<select name="ageCategory"> 
+				<option>Less than 18</option>
+				<option>19 to 30</option>
+				<option>31 to 45</option>
+				<option>46 to 60</option>
+				<option>61 to 80</option>
+				<option>More than 80</option>
+			</select>
 				
+			<br><br>
+			<label for="email" class="prompt">Email</label>
+			<input type="text" id="email" name="email">
 				
-			}
-			
-			#survey label {
-				color: black;
-				font-weight: bold;
-			}
-			
-			/*<!-- The labels in each fieldset should be a lighter version of the border and legend color." ??? thats not what it shows in the example -->*/
-			
-			
-			#options label {
-				font-weight: normal;
-			
-			}
-		
-		
-		
-		
-		</style>
-	
-	</head>
-	
-	
-	
-	
-	
-	
-	
-	<body>
-	
-	<table>
-		<tr>
-			<td><h1>Pizza Lover's Survey</h1></td>
-			<td><a href="https://www.amazon.ca/Hungry-Pizza-Cartoon-Vinyl-Sticker/dp/B077M81CR8">
-					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdzojsliCmHhPwsI6ioPtOhHVO7_tGL8bMKw&usqp=CAU"
-						alt="Picture of a man eating a pizza"
-						width="107" height="125"
-						align="CENTER"/>
-				</a>
-			</td> <!-- for href, should it link to the site from which pic comes from or to the image address? -->
-		</tr>
-	</table>
-	
-	
-	<form> <!-- decide on action and method attributes -->
-	
-	<fieldset id="personal">
-		<legend>Pizza Lover's Personal Information</legend>
-		
-		
-		<label for="firstName">First Name</label>
-		<input type="text" id="firstName" name="firstName">
-		<br><br>
-		<label for="familyName">Family Name</label>
-		<input type="text" id="familyName" name="familyName">
-		<br><br>
-		<label for="gender">Gender:</label>
-		<label><input type="radio" name="gender" value="female"/>Female</label>
-		<label><input type="radio" name="gender" value="male"/>Male</label>
-			
-		<br><br>
-		<label for="ageCategory">What age category are you from?</label>
-		<select name="ageCategory"> <!-- add more options? instead of more than 18 put 18-30, 30-50, 50+ for example -->
-			<option>Less than 18</option>
-			<option>More than 18</option>
-		</select>
-			
-		<br><br>
-		<label for="email">Email</label>
-		<input type="text" id="email" name="email">
-			
-		
-		
-		
-		
-	</fieldset>
-	
-	<fieldset id="survey">
-		<legend>Survey Questions</legend>
-		
-		
-		
-		<label for="pizzaTypes">Which type of pizza do you like? (Pick as many as apply)</label><br>
-		
-		<label><input type="checkbox" name="pizzaTypes" value="cheese"/>Cheese<label>
-		<label><input type="checkbox" name="pizzaTypes" value="meatLovers"/>Meat Lovers<label>
-		<label><input type="checkbox" name="pizzaTypes" value="allDressed"/>All Dressed<label>
+		</fieldset>
 		<br>
-		<label><input type="checkbox" name="pizzaTypes" value="sausage"/>Hawaiian<label>
-		<label><input type="checkbox" name="pizzaTypes" value="onion"/>Vegetarian<label>
-		<label><input type="checkbox" name="pizzaTypes" value="olives"/>Mexican<label>
+	
+		<fieldset class="survey">
+			<legend>Survey Questions</legend>
+				
+			<label for="pizzaTypes" class="prompt">Which type of pizza do you like? (Pick as many as apply)</label><br>
+			<label><input type="checkbox" id="pizzaType1" name="pizzaType1" value="cheese"/>Cheese<label>
+			<label><input type="checkbox" id="pizzaType2" name="pizzaType2" value="meatLovers"/>Meat Lovers<label>
+			<label><input type="checkbox" id="pizzaType3" name="pizzaType3" value="allDressed"/>All Dressed<label>
+			<br>
+			<label><input type="checkbox" id="pizzaType4" name="pizzaType4" value="sausage"/>Hawaiian<label>
+			<label><input type="checkbox" id="pizzaType5" name="pizzaType5" value="onion"/>Vegetarian<label>
+			<label><input type="checkbox" id="pizzaType6" name="pizzaType6" value="olives"/>Mexican<label>
+			<br>
+			<label><input type="checkbox" id="pizzaType7" name="pizzaType7" value="other"/>Other<label>
+			<br><br>
+			
+			<label for="favouritePizzaToppings" class="prompt">List your 3 favourite pizza toppings:</label>
+			<br>
+			<input type="text" id="favouritePizzaTopping1" name="favouritePizzaTopping1">
+			<input type="text" id="favouritePizzaTopping2" name="favouritePizzaTopping2">
+			<input type="text" id="favouritePizzaTopping3" name="favouritePizzaTopping3">
+			<br><br>
+			
+			<label for="restaurantChoice" class="prompt">If you were to win a free pizza of your choice, which pizza place would you want it from?<label><br>
+			<label><input type="radio" id="dominos" name="restaurantChoice" value="dominos"/>Domino's Pizza</label>
+			<label><input type="radio" id="pizzaHut" name="restaurantChoice" value="pizzaHut"/>Pizza Hut</label>
+			<label><input type="radio" id="sliceAndSoda" name="restaurantChoice" value="sliceAndSoda"/>Slice + Soda</label>
+			<label><input type="radio" id="pizzaBella" name="restaurantChoice" value="pizzaBella"/>Pizza Bella</label>
+				
+		</fieldset>
 		<br>
-		<label><input type="checkbox" name="pizzaTypes" value="other"/>Other<label>
-		<br><br>
-		
-		
-		<label for="favouritePizzaToppings">List your 3 favourite pizza toppings:</label>
-		<br>
-		<input type="text" name="favouritePizzaToppings">
-		<input type="text" name="favouritePizzaToppings">
-		<input type="text" name="favouritePizzaToppings">
-			
-		<br><br>
-		
-		<label for="restaurantChoice">If you were to win a free pizza of your choice, which pizza place would you want it from?<label><br>
-		<div id="options">
-		<label><input type="radio" name="restaurantChoice" value="dominos"/>Domino's Pizza</label>
-		<label><input type="radio" name="restaurantChoice" value="pizzaHut"/>Pizza Hut</label>
-		<label><input type="radio" name="restaurantChoice" value="sliceAndSoda"/>Slice + Soda</label>
-		<label><input type="radio" name="restaurantChoice" value="pizzaBella"/>Pizza Bella</label>
-		<div>
-			
-			
-		
-		
-		
-		
-		
-	</fieldset>
 	
+		<p>Thank you for taking the time to fill out our survey!</p>
+		<input type="submit" value="Submit"> 
+		<input type="reset"> 
+		
+		</form>
+	</div>	
 	
-	<br>
-	<p>Thank you for taking the time to fill out our survey!</p>
-	<input type="submit" value="Submit"> <!-- should submit and reset buttons be in <form>? if so, which one? and how? -->
-	<input type="reset"> <!-- or if they're ok here, how to i link them to the forms? -->
-	<!-- put fieldtext INSIDE OF ONE LARGE FORM -->
-	
-	
-	</form>
-	
-	
-	
-	</body>
-
-
-
-
-
-
-
-
-
-
+</body>
 
 </html>
