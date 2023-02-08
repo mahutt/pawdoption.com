@@ -19,7 +19,7 @@
     <!-- END HEADER -->
 
     <div class="logo">
-        <img src="pawdoption_logo3.png"/>
+        <a href="home.html"><img src="pawdoption_logo3.png"/></a>
     </div>
     
     <div class="menu">
@@ -40,13 +40,109 @@
         <h1>
             Find a cat or dog
         </h1>
+        <p>
+            Fill out the form below and we'll get straight to work, selecting
+            a pet that would fit best with you! Your new best friend is just a few
+            clicks away.
+        </p>
+
+        <form class="petform" id="catform">
+            <h2>Cat Person Form</h2>
+            <label for="animalGender">Preferred Gender</label>
+            <br>
+            <label><input type="radio" name="animalGender" value="female">Female</label>
+            <label><input type="radio" name="animalGender" value="male">Male</label>
+            <label><input type="radio" name="animalGender" value="dontCare">Doesn't Matter</label>
+            <br><br>
+
+            
+            <label for="animalBreed">Preffered Breed</label>
+            <br>
+            <select name="animalBreed" id="animalBreed">
+                <option value="dontCare">Doesn't Matter</option>
+                <option value="britishShorthair">British Shorthair</option>
+                <option value="persian">Persian</option>
+                <option value="maineCoon">Maine Coon</option>
+                <option value="americanShorthair">American Shorthair</option>
+                <option value="scottishFold">Scottish Fold</option>
+                <option value="sphynx">Sphynx</option>
+                <option value="mixed">Mixed Breed</option>
+                <option value="else">Else</option>
+            </select><br><br>
+
+            <label for="animalAge">Preffered Age</label><br>
+            <select name="animalAge" id="animalAge">
+                <option value="dontCare">Doesn't Matter</option>
+                <option value="lessThan1">Less than 1 year</option>
+                <option value="1to4">Between 1 and 4 years</option>
+                <option value="4to8">Between 4 and 8 years</option>
+                <option value="moreThan8">More than 8 years<option>
+            </select><br><br>
+
+            <label for="behaviour">Select any of the following:</label><br>
+            <label></label><input type="checkbox" name="behaviour" value="catCompatible">Must get along with cats</label><br>
+            <label></label><input type="checkbox" name="behaviour" value="dogCompatible">Must get along with dogs</label><br>
+            <label></label><input type="checkbox" name="behaviour" value="childCompatible">Must get along with small children</label>
+            <br><br>
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+
+        <form class="petform" id="dogform">
+
+            <label for="animalGender">Preferred Gender</label>
+            <br>
+            <label><input type="radio" name="animalGender" value="female">Female</label>
+            <label><input type="radio" name="animalGender" value="male">Male</label>
+            <label><input type="radio" name="animalGender" value="dontCare">Doesn't Matter</label>
+            <br><br>
+
+            
+            <label for="animalBreed">Preffered Breed</label>
+            <br>
+            <select name="animalBreed" id="animalBreed">
+                <option value="dontCare">Doesn't Matter</option>
+                <option value="goldenRetriever">Golden Retriever</option>
+                <option value="labradorRetriever">Labrador Retriever</option>
+                <option value="frenchBulldog">French Bulldog</option>
+                <option value="beagle">Beagle</option>
+                <option value="poodle">Poodle</option>
+                <option value="mixed">Mixed Breed</option>
+                <option value="else">Else</option>
+            </select><br><br>
+
+            <label for="animalAge">Preffered Age</label><br>
+            <select name="animalAge" id="animalAge">
+                <option value="dontCare">Doesn't Matter</option>
+                <option value="lessThan1">Less than 1 year</option>
+                <option value="1to4">Between 1 and 4 years</option>
+                <option value="4to8">Between 4 and 8 years</option>
+                <option value="moreThan8">More than 8 years<option>
+            </select><br><br>
+
+            <label for="behaviour">Select any of the following:</label><br>
+            <label></label><input type="checkbox" name="behaviour" value="catCompatible">Must get along with cats</label><br>
+            <label></label><input type="checkbox" name="behaviour" value="dogCompatible">Must get along with dogs</label><br>
+            <label></label><input type="checkbox" name="behaviour" value="childCompatible">Must get along with small children</label>
+            <br><br>
+
+            <input type="submit">
+            <input type="reset">
+
+
+        </form>
     </div>
 
     
     
 
     <div class="footer">
-        <h1>Find a dog/cat</h1>
+        <p>
+            Any information provided to Pawdoption Inc. will not be sold nor misused.<br>
+            Pawdoption Inc. isn't responsible for verifying or legitmizing information provided by its users.<br>
+            Pawdoption Inc. reserves the right to remove postings that breach the Pawdoption terms and conditions.
+        </p>
     </div>
 
     

@@ -67,7 +67,10 @@ body {
 .content {
     float: right;
     width: 86%;
+    height: 1000px; /* temp */
     padding: 20px;
+    
+    background-color: #f0efeb;
 }
 
 .content p {
@@ -83,4 +86,13 @@ body {
     color: #DDBEA9;
     text-align: center;
     font-size: 14px;
+}
+
+.petform {
+    
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+
+    background-color: #B7B7A4;
 }
