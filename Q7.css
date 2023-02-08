@@ -5,14 +5,12 @@ div {
     padding: 5px;
     text-align: center;
 }
-
 span.red {
     color: red;
     font-weight: bold;
 
 }
-
 #second {
     position: relative;
-    bottom: 60px;
+    bottom: 50px;
 }
