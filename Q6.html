@@ -1,66 +1,42 @@
 <!DOCTYPE html>
 
- <!-- ok that i hard coded "home" green? -->
- <!-- how to make links black? they are purple right now -->
-
- <html>
+<html>
 
 <head>
-
     <style>
         list {
             list-style: none;
-            margin: 0px;
-            padding: 10px;
         }
-
-        list li {
-            width: 50%;
-            padding: 15px;
-            padding-left: 30px;
-            background: rgb(183, 183, 183);
-            text-align: left;
+        list a {
             text-decoration: none;
+        }
+        list li {
+            width: 170px;
+            padding: 10px;
+            padding-left: 15px;
+            background: rgb(227, 227, 227);
             color: black;
-            
         }
-
-       
-        #currentPage { 
-            background-color: rgb(104, 186, 104);
-        }
-
         list li:hover {
-            background-color: rgb(100, 100, 100);
+            background-color: rgb(90, 90, 90);
+            color: white;
         }
-
-        a:link {text-decoration: none;}
-        a:visited {text-decoration: none;}
-        a:hover {text-decoration: none;}
-        a:active {text-decoration: none;}
-
-
-        
-        
-        
-
-
-
-
+        .current { 
+            background-color: rgb(81, 178, 81);
+            color: white;
+        }
     </style>>
-
 </head>
 
-<body>
+<body class="Q6">
     <h1>Vertical Nagivation Bar</h1>
     <p>"Home" is the current page. There are four menu items.</p>
     <list>
-        <a href=""><li id="currentPage">Home</li></a>
-        <a href=""><li>News</li></a>
-        <a href=""><li>Contact</li></a>
-        <a href=""><li>About</li></a>
+        <a href="#"><li class="current">Home   </li></a>
+        <a href="#"><li>                 News   </li></a>
+        <a href="#"><li>                 Contact</li></a>
+        <a href="#"><li>                 About  </li></a>
     </list>
-
 </body>
 
 </html>
