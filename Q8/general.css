@@ -67,7 +67,7 @@ body {
 .content {
     float: right;
     width: 86%;
-    height: 1000px; /* temp */
+    min-height: 500px; /* temp */
     padding: 20px;
     
     background-color: #f0efeb;
@@ -88,11 +88,38 @@ body {
     font-size: 14px;
 }
 
-.petform {
-    
+.bubble {
+    display: inline-block;
+    margin: 10px;
     border: 1px solid black;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 50px;
+    padding: 30px;
 
+    background-color:#A5A58D;
+
+    box-shadow: 10px 10px rgb(29, 29, 29);
+}
+
+.bubble:hover {
     background-color: #B7B7A4;
 }
+
+.prompt {
+    font-weight: bold;
+}
+
+input[type=submit], input[type=reset] {
+    min-width: 100px;
+    background-color: #CB997E;
+    border: 1px solid black;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px rgb(29, 29, 29);
+  }
+
+  input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #DDBEA9;
+  }
