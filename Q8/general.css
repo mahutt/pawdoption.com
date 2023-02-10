@@ -69,7 +69,6 @@ body {
     width: 86%;
     min-height: 700px; /* temp */
     padding: 20px;
-    
     background-color: #f0efeb;
 }
 
@@ -92,7 +91,13 @@ body {
     font-size: 14px;
 }
 
+.bubbles {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .bubble {
+    max-width: 500px;
     display: inline-block;
     margin: 10px;
     border: 1px solid black;
