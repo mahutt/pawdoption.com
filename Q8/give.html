@@ -3,7 +3,8 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="general.css"/>
+    <title>Pawdoption | Adoption Form</title>
+    <link rel="stylesheet" href="general.css">
     <meta charset="UTF-8">
 </head>
 
@@ -19,7 +20,7 @@
     <!-- END HEADER -->
 
     <div class="logo">
-        <a href="home.html"><img src="pawdoption_logo3.png"/></a>
+        <a href="home.html"><img src="pawdoption_logo3.png" alt="logo"></a>
     </div>
     
     <div class="menu">
@@ -47,11 +48,11 @@
             is responsible for bringing the animal to our on-site location.
         </p>
 
-        <form action="" class="bubbles">
+        <form class="bubbles">
             <div class="bubble">
             
                 <h2><u>Pet Information:</u></h2>
-                <label for="animalType" class="prompt">Animal Type</label>
+                <label class="prompt">Animal Type</label>
                 <br>
                 <label><input type="radio" name="animalType" value="cat">Cat</label>
                 <label><input type="radio" name="animalType" value="dog">Dog</label>
@@ -81,20 +82,20 @@
                     <option value="lessThan1">Less than 1 year</option>
                     <option value="1to4">Between 1 and 4 years</option>
                     <option value="4to8">Between 4 and 8 years</option>
-                    <option value="moreThan8">More than 8 years<option>
+                    <option value="moreThan8">More than 8 years</option>
                     <option value="unsure">Not Sure</option>
                 </select><br><br>
 
-                <label for="animalGender" class="prompt">Animal's Gender</label>
+                <label class="prompt">Animal's Gender</label>
                 <br>
                 <label><input type="radio" name="animalGender" value="female">Female</label>
                 <label><input type="radio" name="animalGender" value="male">Male</label>
                 <br><br>
 
-                <label for="behaviour" class="prompt">Select accurate descriptors:</label><br>
-                <label></label><input type="checkbox" name="behaviour" value="catCompatible">Gets along with cats</label><br>
-                <label></label><input type="checkbox" name="behaviour" value="dogCompatible">Gets along with dogs</label><br>
-                <label></label><input type="checkbox" name="behaviour" value="childCompatible">Suitable for families with small children</label>
+                <label class="prompt">Select accurate descriptors:</label><br>
+                <label><input type="checkbox" name="behaviour" value="catCompatible">Gets along with cats</label><br>
+                <label><input type="checkbox" name="behaviour" value="dogCompatible">Gets along with dogs</label><br>
+                <label><input type="checkbox" name="behaviour" value="childCompatible">Suitable for families with small children</label>
                 <br><br>
 
                 <label for="petDescription">Tell Us More About Your Pet:</label>
@@ -117,9 +118,9 @@
                 <input type="text" id="familyName" name="familyName">
                 <br><br>
 
-                <label for="firstName">Email:</label>
+                <label for="email">Email:</label>
                 <br>
-                <input type="text" id="firstName" name="firstName">
+                <input type="text" id="email" name="email">
                 <br><br>
 
                 <input type="submit">
