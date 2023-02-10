@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
+	<title>Q4</title>
+    <meta charset="UTF-8">
 	<style>
 		body {
 			background-color: rgb(161, 253, 100);
@@ -31,89 +33,91 @@
 </head>
 	
 <body>
-	<div class="Q4">	
-		<table>
-			<tr>
-				<td><h1>Pizza Lover's Survey</h1></td>
-				<td><a href="https://www.pngegg.com/en/png-wbiav/download">
-						<img src="pizza.png"
-							alt="Picture of a pizza"
-							width="100" height="100"/>
-					</a>
-				</td>
-			</tr>
-		</table>
-		
-		<form>
-		<fieldset class="personal">
-			<legend>Pizza Lover's Personal Information</legend>
-			
-			<label for="firstName" class="prompt">First Name</label>
-			<input type="text" id="firstName" name="firstName">
-			<br><br>
-	
-			<label for="familyName" class="prompt">Family Name</label>
-			<input type="text" id="familyName" name="familyName">
-			<br><br>
-	
-			<label for="gender" class="prompt">Gender:</label>
-			<label><input type="radio" id="female" name="gender" value="Female"/>Female</label>
-			<label><input type="radio" id="male" name="gender" value="Male"/>Male</label>
-		
-			<br><br>
-			<label for="ageCategory" class="prompt">What age category are you from?</label>
-			<select name="ageCategory"> 
-				<option>Less than 18</option>
-				<option>19 to 30</option>
-				<option>31 to 45</option>
-				<option>46 to 60</option>
-				<option>61 to 80</option>
-				<option>More than 80</option>
-			</select>
-				
-			<br><br>
-			<label for="email" class="prompt">Email</label>
-			<input type="text" id="email" name="email">
-				
-		</fieldset>
-		<br>
-	
-		<fieldset class="survey">
-			<legend>Survey Questions</legend>
-				
-			<label for="pizzaTypes" class="prompt">Which type of pizza do you like? (Pick as many as apply)</label><br>
-			<label><input type="checkbox" id="pizzaType1" name="pizzaType1" value="cheese"/>Cheese<label>
-			<label><input type="checkbox" id="pizzaType2" name="pizzaType2" value="meatLovers"/>Meat Lovers<label>
-			<label><input type="checkbox" id="pizzaType3" name="pizzaType3" value="allDressed"/>All Dressed<label>
-			<br>
-			<label><input type="checkbox" id="pizzaType4" name="pizzaType4" value="sausage"/>Hawaiian<label>
-			<label><input type="checkbox" id="pizzaType5" name="pizzaType5" value="onion"/>Vegetarian<label>
-			<label><input type="checkbox" id="pizzaType6" name="pizzaType6" value="olives"/>Mexican<label>
-			<br>
-			<label><input type="checkbox" id="pizzaType7" name="pizzaType7" value="other"/>Other<label>
-			<br><br>
-			
-			<label for="favouritePizzaToppings" class="prompt">List your 3 favourite pizza toppings:</label>
-			<br>
-			<input type="text" id="favouritePizzaTopping1" name="favouritePizzaTopping1">
-			<input type="text" id="favouritePizzaTopping2" name="favouritePizzaTopping2">
-			<input type="text" id="favouritePizzaTopping3" name="favouritePizzaTopping3">
-			<br><br>
-			
-			<label for="restaurantChoice" class="prompt">If you were to win a free pizza of your choice, which pizza place would you want it from?<label><br>
-			<label><input type="radio" id="dominos" name="restaurantChoice" value="dominos"/>Domino's Pizza</label>
-			<label><input type="radio" id="pizzaHut" name="restaurantChoice" value="pizzaHut"/>Pizza Hut</label>
-			<label><input type="radio" id="sliceAndSoda" name="restaurantChoice" value="sliceAndSoda"/>Slice + Soda</label>
-			<label><input type="radio" id="pizzaBella" name="restaurantChoice" value="pizzaBella"/>Pizza Bella</label>
-				
-		</fieldset>
-		<br>
-	
-		<p>Thank you for taking the time to fill out our survey!</p>
-		<input type="submit" value="Submit"> 
-		<input type="reset"> 
-		
-		</form>
+	<div class="Q4">
+        <table>
+            <tr>
+                <td><h1>Pizza Lover's Survey</h1></td>
+                <td>
+                    <a href="https://www.pngegg.com/en/png-wbiav/download">
+                    <img src="pizza.png"
+                        alt="Picture of a pizza"
+                        width="100" height="100">
+                    </a>
+                </td>
+            </tr>
+        </table>
+        
+        <form>
+        <fieldset class="personal">
+            <legend>Pizza Lover's Personal Information</legend>
+            
+            <label for="firstName" class="prompt">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+            <br><br>
+    
+            <label for="familyName" class="prompt">Family Name</label>
+            <input type="text" id="familyName" name="familyName">
+            <br><br>
+    
+            <label class="prompt">Gender:</label>
+            <label for="female" id="gender1"><input type="radio" id="female" name="gender" value="Female">Female</label>
+            <label for="male" id="gender2"><input type="radio" id="male" name="gender" value="Male">Male</label>
+        
+            <br><br>
+            <label for="ageCategory" class="prompt">What age category are you from?</label>
+            <select id="ageCategory" name="ageCategory"> 
+                <option>Less than 18</option>
+                <option>19 to 30</option>
+                <option>31 to 45</option>
+                <option>46 to 60</option>
+                <option>61 to 80</option>
+                <option>More than 80</option>
+            </select>
+                
+            <br><br>
+            <label for="email" class="prompt">Email</label>
+            <input type="text" id="email" name="email">
+                
+        </fieldset>
+        <br>
+    
+        <fieldset class="survey">
+            <legend>Survey Questions</legend>
+                
+            <label class="prompt">Which type of pizza do you like? (Pick as many as apply)</label><br>
+            <label for="pizzaType1">Cheese     </label><input type="checkbox" id="pizzaType1" name="pizzaType1" value="cheese">    
+            <label for="pizzaType2">Meat Lovers</label><input type="checkbox" id="pizzaType2" name="pizzaType2" value="meatLovers">
+            <label for="pizzaType3">All Dressed</label><input type="checkbox" id="pizzaType3" name="pizzaType3" value="allDressed">
+            <br>
+            <label for="pizzaType4">Hawaiian   </label><input type="checkbox" id="pizzaType4" name="pizzaType4" value="sausage">   
+            <label for="pizzaType5">Vegetarian </label><input type="checkbox" id="pizzaType5" name="pizzaType5" value="onion">     
+            <label for="pizzaType6">Mexican    </label><input type="checkbox" id="pizzaType6" name="pizzaType6" value="olives">        
+            <br>
+            <label for="pizzaType7">Other      </label><input type="checkbox" id="pizzaType7" name="pizzaType7" value="other">     
+            <br><br>
+            
+            <label class="prompt">List your 3 favourite pizza toppings:</label>
+            <br>
+            <input type="text" id="favouritePizzaTopping1" name="favouritePizzaTopping1">
+            <input type="text" id="favouritePizzaTopping2" name="favouritePizzaTopping2">
+            <input type="text" id="favouritePizzaTopping3" name="favouritePizzaTopping3">
+            <br><br>
+            
+            <label class="prompt">If you were to win a free pizza of your choice, which pizza place would you want it from?</label>
+            <br>
+            <input type="radio" id="dominos" name="restaurantChoice" value="dominos">          <label>Domino's Pizza</label>
+            <input type="radio" id="pizzaHut" name="restaurantChoice" value="pizzaHut">        <label>Pizza Hut     </label>
+            <input type="radio" id="sliceAndSoda" name="restaurantChoice" value="sliceAndSoda"><label>Slice + Soda  </label>
+            <input type="radio" id="pizzaBella" name="restaurantChoice" value="pizzaBella">    <label>Pizza Bella   </label>
+                
+        </fieldset>
+        <br>
+    
+        <p>Thank you for taking the time to fill out our survey!</p>
+        <input type="submit" value="Submit"> 
+        <input type="reset"> 
+        
+        </form>
 	</div>	
 	
 </body>
